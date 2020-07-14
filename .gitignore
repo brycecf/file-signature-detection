@@ -1,0 +1,9 @@
+.*^(.yaml)
+file-signature-detection/.tox/dist
+.tox
+*.ipynb
+*.egg-info
+.idea
+__pycache__
+.coverage
+.pytest_cache/*
