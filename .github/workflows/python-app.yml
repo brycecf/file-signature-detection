@@ -25,7 +25,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install pipenv
         cd file-signature-detection
-        pipenv shell && pipenv install --dev
+        pipenv install --dev
     - name: Test with pytest
       run: |
-        pytest
+        pipenv run pytest --cov file_signature_detection
