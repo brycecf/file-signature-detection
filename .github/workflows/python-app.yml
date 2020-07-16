@@ -24,7 +24,6 @@ jobs:
       uses: dschep/install-pipenv-action@v1
     - name: Install dependencies
       run: |
-        cd file-signature-detection
         pipenv install --dev
     - name: Test with pytest
       run: |
