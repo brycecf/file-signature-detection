@@ -30,4 +30,4 @@ jobs:
         pipenv run pip install .
     - name: Test with pytest
       run: |
-        pipenv run pytest --cov file_signature_detection
+        pipenv run pytest --cov=file_signature_detection --cov-report=term-missing
