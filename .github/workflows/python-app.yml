@@ -27,7 +27,7 @@ jobs:
         pipenv install --dev
     - name: Install file_signature_detection package
       run: |
-        pip install .
+        pipenv run pip install .
     - name: Test with pytest
       run: |
         pipenv run pytest --cov file_signature_detection
